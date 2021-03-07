@@ -1,0 +1,104 @@
+main{
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+table,th,td{
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+table{
+    margin: 50px auto;
+}
+td, th { 
+    padding: 5px;
+}
+
+.navbar{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+    box-shadow: -15px -3px 28px -19px #000000;
+   
+    display: grid;
+    grid-template-areas: 
+    "navIcon registro generar navIcon2";
+    grid-template-columns: repeat(4,auto);
+    gap:10;
+    border-radius: 25px;
+}
+
+
+
+
+/* elementos barra*/
+
+.navbar .registro {
+    grid-area: registro;
+    background-color:#2b6691 ;
+    color: #adcfe9;
+    text-size-adjust: large;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid;
+    border-style: outset;
+    box-shadow: 5px 5px #6d6969;
+
+
+}
+.navbar .navIcon {
+    grid-area: navIcon;
+    background-color:#2b6691 ;
+    color: #adcfe9;
+    text-size-adjust: large;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid;
+    border-style: outset;
+    box-shadow: 5px 5px #6d6969;
+
+}
+.navbar .navIcon2 {
+    grid-area: navIcon2;
+    background-color:#2b6691 ;
+    color: #adcfe9;
+    text-size-adjust: large;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid;
+    border-style: outset;
+    box-shadow: 5px 5px #6d6969;
+
+}
+.navbar .generar {
+    grid-area: generar;
+    background-color:#2b6691 ;
+    color: #adcfe9;
+    text-size-adjust: large;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid;
+    border-style: outset;
+    box-shadow: 5px 5px #6d6969;
+}
+
+
+/* visited link */
+.navbar  a:visited {
+  color: #adcfe9;;
+}
+
+/* mouse over link */
+.navbar  a:hover {
+    color:whitesmoke
+
+}
+
+/* selected link */
+.navbar a:active {
+  color: #adcfe9;
+}

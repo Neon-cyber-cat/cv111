@@ -1,0 +1,482 @@
+body{
+    background-color: #828f98;
+    background: linear-gradient( #2c3e61, #648aa5) ;
+   /* background: url(paper.gif);
+    background-repeat: repeat;*/
+}
+.navbar{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    max-width: 100%;   
+    display: grid;
+    grid-template-areas: 
+    "navIcon registro generar navIcon2";
+    grid-template-columns: repeat(4,auto);
+    gap:10;
+    border-radius: 25px;
+}
+
+.searchbar{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    max-width: 75%;    
+    /*background-color: teal;*/
+    display: grid;
+    grid-template-areas: 
+    "navIcon registro generar ";
+    grid-template-columns: repeat(3,auto);
+    gap:10;
+    border-radius: 25px;
+}
+
+/*contenedor principal*/
+.modprim{
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    max-width: 100%;
+   border-radius: 25px;
+}
+
+/*Grid*/
+
+.grid{
+    /*
+        background-color: #152031;
+     colores
+    152031
+    2c3e61
+    152031
+    */
+    background: linear-gradient(45deg, #293c63, #152031) ;
+    display: grid;
+    grid-template-areas: 
+    "vacio1 maingrid vacio2"
+    "experiencia maingrid educacion" 
+    "experiencia maingrid educacion" 
+    "software maingrid skills";
+    grid-template-columns: 35% 30% 35%;
+    border-radius: 25px;
+    gap:10
+
+}
+
+/* maingrid*/
+.maingrid{
+    background-color: #1e2126;
+    grid-area: maingrid;
+    display: grid;
+    grid-template-areas: 
+    "vacio1"
+    "personal"
+    "sitios";
+    border-radius: 25px;
+}
+
+/*vacios*/
+
+.vacio1{
+    grid-area: vacio1;
+    margin-bottom: 100px;
+}
+
+.vacio2{
+    grid-area: vacio2;
+    margin-bottom: 100px;
+}
+
+/*Seccion personal*/
+
+.personal{
+    grid-area: personal;
+    background-color: #293a4c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.personal > .nombre{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.personal > .puesto{
+    margin: 0px;
+}
+
+.personal > .informacion{
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-width: 3px;
+    background-color: #293a4c;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.personal > .informacion > h4{
+    margin: 0px;
+}
+
+.personal > .informacion > p{
+    margin-top: 0px;
+    color: #527190;
+}
+
+.personal .redes{
+    background-color: #293a4c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* EXP */
+
+.experiencia{
+    grid-area: experiencia;
+    text-align: right;
+    padding: 25px;
+    padding-bottom: 0px;
+    border-radius: 25px;
+}
+
+.experiencia h1{
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-width: 3px;
+    color: white;
+    text-align: center;
+}
+
+.experiencia > .empresa{
+    color: #617188;
+    margin: 0px;
+}
+
+.experiencia > .puesto{
+    color: white;
+    margin: 0px;
+
+}
+.experiencia > .fecha{
+    color: #50535a;
+    margin: 0px;
+}
+
+.experiencia > .descripcion{
+    color: white;
+}
+
+/*EDU */
+
+.educacion{
+    grid-area: educacion;
+    text-align: left;
+    padding: 25px;
+    padding-bottom: 0px;
+    border-radius: 25px;
+}
+
+.educacion h1{
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-width: 3px;
+    color: white;
+    text-align: center;
+}
+
+.educacion > .escuela{
+    color: #617188;
+    margin: 0px;
+}
+
+.educacion > .carrera{
+    color: white;
+    margin: 0px;
+
+}
+.educacion > .fecha{
+    color: #50535a;
+    margin: 0px;
+}
+
+.educacion > .descripcion{
+    color: white;
+}
+
+/* SOFT*/
+
+.software{
+    grid-area: software;
+    text-align: left;
+    padding: 25px;
+}
+
+.software h1{
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-width: 3px;
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+}
+
+.software .nombre{
+    color: white;
+    width: 185px;
+    margin: 0px;
+    float: left;
+}
+
+.software .puntos{
+    margin-bottom: 10px;
+}
+
+.software .puntos .lleno{
+    height: 10px;
+    width: 10px;
+    background-color: #366290;
+    border: 3px solid #366290;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+.software .puntos .vacio{
+    height: 10px;
+    width: 10px;
+    border: 3px solid #366290;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+/* SKILLS*/
+
+.skills{
+    grid-area: skills;
+    text-align: left;
+    padding: 25px;
+}
+
+.skills h1{
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-width: 3px;
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+}
+
+.skills .nombre{
+    color: white;
+    width: 165px;
+    margin: 0px;
+    margin-left: 21px;
+    float: right;
+}
+
+.skills .puntos{
+    margin-bottom: 10px;
+}
+
+.skills .puntos .lleno{
+    height: 10px;
+    width: 10px;
+    background-color: #366290;
+    border: 3px solid #366290;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 10px;
+}
+
+.skills .puntos .vacio{
+    height: 10px;
+    width: 10px;
+    border: 3px solid #366290;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 10px;
+}
+
+.sitios{
+    grid-area: sitios;
+    text-align: center;
+    padding: 25px;
+    display: grid;
+    grid-template-areas:
+    "sitioTITULO sitioTITULO"
+    "sitio1 sitio2"
+    "sitio3 sitio4"
+    ;
+}
+.sitios h1{
+    grid-area: sitioTITULO;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-width: 3px;
+    color: white;
+    text-align: center;
+    font-size: large;
+    
+}
+
+.sitios .sitio1 {
+    grid-area: sitio1;
+    color: #828f98;
+    color-adjust: gray;
+    text-size-adjust: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.sitios .sitio2 {
+    grid-area: sitio2;
+    color: #828f98;
+    color-adjust: gray;
+    text-size-adjust: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.sitios .sitio3 {
+    grid-area: sitio3;
+    color: #828f98;
+    color-adjust: gray;
+    text-size-adjust: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.sitios .sitio4 {
+    grid-area: sitio4;
+    color: #828f98;
+    color-adjust: gray;
+    text-size-adjust: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+.sitios img{
+    border-radius: 8px;
+    width: 45px;
+
+    
+}
+
+.navbar .registro {
+    grid-area: registro;
+    background-color:#2b6691 ;
+    color: #adcfe9;
+    text-size-adjust: large;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid;
+    border-style: outset;
+    box-shadow: 5px 5px #6d6969;
+
+
+}
+.navbar .navIcon {
+    grid-area: navIcon;
+    background-color:#2b6691 ;
+    color: #adcfe9;
+    text-size-adjust: large;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid;
+    border-style: outset;
+    box-shadow: 5px 5px #6d6969;
+
+}
+.navbar .navIcon2 {
+    grid-area: navIcon2;
+    background-color:#2b6691 ;
+    color: #adcfe9;
+    text-size-adjust: large;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid;
+    border-style: outset;
+    box-shadow: 5px 5px #6d6969;
+
+}
+.navbar .generar {
+    grid-area: generar;
+    background-color:#2b6691 ;
+    color: #adcfe9;
+    text-size-adjust: large;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid;
+    border-style: outset;
+    box-shadow: 5px 5px #6d6969;
+}
+
+
+/* visited link */
+.navbar  a:visited {
+  color: #adcfe9;;
+}
+
+/* mouse over link */
+.navbar  a:hover {
+    color:whitesmoke
+
+}
+
+/* selected link */
+.navbar a:active {
+  color: #adcfe9;
+}
+
+
+/*searbar elem*/
+.searchbar .generar {
+    grid-area: generar;
+    background: linear-gradient( #4681f0, #2b6691) ;
+    color: #adcfe9;
+    text-size-adjust: large;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid;
+    border-style: outset;
+    box-shadow: 5px 5px #6d6969;
+}
+.searchbar .registro {
+    grid-area: registro;
+    background: linear-gradient( #4681f0, #2b6691) ;
+    color: #adcfe9;
+    text-size-adjust: large;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid;
+    border-style: outset;
+    box-shadow: 5px 5px #6d6969;
+
+
+}
+.searchbar .navIcon {
+    grid-area: navIcon;
+    background-color:#2b6691 ;
+    background: linear-gradient( #4681f0, #2b6691) ;
+    color: #adcfe9;
+    text-size-adjust: large;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid;
+    border-style: outset;
+    box-shadow: 5px 5px #6d6969;
+    align-content: center;
+
+}

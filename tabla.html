@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabla.css">
+    <title>CV maker v3 </title>
+</head>
+<body>
+
+
+    <div class="navbar" id="navbar">
+        <div class="navIcon" id="navIcon"><h4>Nav icon</h4></div>
+        <div class="registro" id="registro"><h4><a href="index.html">Registrate</a></h4></div>
+        <div class="generar" id="generar"><h4><a href="cv.html">Generar Cv</a></h4></div>
+    </div>
+
+    <main>
+        <h2>Datos principales</h2>
+
+        <label>Name:</label>
+        <input type="text" id="name-input" placeholder="John " required>
+<!---convt3----------------contv3---------------------------->
+        <label>Apellidos</label>
+        <input type="text" id="lastn-input" placeholder="Doe"required>
+
+        <label>Correo</label>
+        <input type="text" id="mail-input" placeholder="mail@me.com" required>
+
+        <label>Titulo</label>
+        <input type="text" id="tituloMain-input" placeholder="Jedi knight">
+
+        <label>Fecha de nacimiento</label>
+        <input type="text" id="dob-input" placeholder="26/01/20">
+
+        <label>Ciudad</label>
+        <input type="text" id="addres-input" placeholder="Black Spire Outpost">
+
+        <label>Telefono de contacto</label>
+        <input type="text" id="tel-input" placeholder="55-1234-1234">
+
+        <label>Describe un poco de ti</label>
+        <input type="textarea" id="descrMain-input" placeholder= "It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.
+        During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.
+        " >
+
+        <label>Pagina personal</label>
+        <input type="text" id="purl-input" placeholder="www.noExisto.com">
+
+        <label>Sitio 1</label>
+        <input type="text" id="s1-input"placeholder="/Forgotten ">
+        
+        <label>Sitio 2</label>
+        <input type="text" id="s2-input"placeholder="/Forgotten ">
+<!----principal done-->
+
+
+<!---comienza exp-->
+    <h3>Experiencia Laboral</h3>
+    <h4>Experiencia 1</h4>
+<!--exp1-->
+<label>Lugar de trabajo:</label> 
+<input type="text" name="exp1_lugar" placeholder="Coruscant Jedi temple">
+
+<label>Posicion:</label> 
+<input type="text" name="exp1_t" placeholder="Jedi consul">
+
+<label>Fecha inicio:</label>
+<input type="text" name="exp1_di" placeholder="1983-06-06">
+
+<label>Fecha Final:</label>
+<input type="text" name="exp1_df" placeholder="Actual">
+
+<label>Describe un poco de este empleo (50 palabras max)</label>
+<input type="textarea" id="descrExp1" placeholder= "It is a period of civil war.
+Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.
+" >
+
+<!--exp2-->
+<!--exp3-->
+<!----termina exp-->
+
+<!---comienza edu-->
+    <h3>Educación</h3>
+    <h4>Edu principal 1</h4>
+<!--edu1-->
+<label>Ecuela o institucion:</label> 
+<input type="text" name="edu1_lugar" placeholder="Coruscant Jedi temple">
+
+<label>Titulo o carrera:</label> 
+<input type="text" name="edu1_t" placeholder="Jedi consul">
+
+<label>Fecha inicio:</label>
+<input type="text" name="edu1_di" placeholder="1983-06-06">
+
+<label>Fecha Final:</label>
+<input type="text" name="edu1_df" placeholder="Actual">
+
+<label>Describe tus puntos fuertes (50 palabras max)</label>
+<input type="textarea" id="descrEdu1" placeholder= "It is a period of civil war.
+Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.
+" >
+<!--edu2-->
+<!--edu3-->
+<!----termina exp-->
+
+        <!----->
+        <button id="add-name-btn">Add Name</button>
+        <!----->
+
+        <br><br><br>
+        <div>
+           <input placeholder="search by name" id="search-input">
+           <button id="search-btn">Search</button>
+        </div>
+
+<!---------------------Tabla------------------------------>
+        <table id="table">
+            <thead>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>E-mail</th>
+                <th>Titulo</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Ciudad</th>
+                <th>Telefono</th>
+                <th>Date Added</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+
+<!------------------show update list----------------->
+        <section hidden id="update-row">
+            <label>Name:</label>
+            <input type="text" id="update-name-input">
+            <button id="update-row-btn">Update</button>
+        </section>
+    </main>
+    <script src="tabla.js"></script>
+</body>
+</html>

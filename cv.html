@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cv.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="navbar" id="navbar">
+        <div class="navIcon" id="navIcon"><h4>Nav icon</h4></div>
+        <div class="registro" id="registro"><h4><a href="index.html">Registrate</a></h4></div>
+        <div class="generar" id="generar"><h4><a href="cv.html">Generar Cv</a></h4></div>
+    </div>
+    <br>
+
+    <div class="searchbar" id="searchbar">
+        <div class="navIcon" id="navIcon">
+            <h5>Elimina registro</h5>
+            <button class="delete-row-btn" data-id=${data.id}>Delete</button>
+        </div>
+        <div class="registro" id="registro">
+            <h5>Busqueda por mail</h5>
+            <input placeholder="search by mail" id="search-input">
+        </div>
+        <div class="generar" id="generar">
+            <h5>Buscar</h5>
+                <button id="search-btn" >Search</button>
+        </div>
+    </div>
+    
+
+    <div class="modprim">
+
+        <div class="grid">
+
+            <div class="vacio1"></div>
+
+            <div class="vacio2"></div>
+
+            <div class="experiencia" id="experiencia">
+                <h1>Experiencia</h1>
+            </div>
+            
+            <!--experiencia-->
+
+            <div class="software">
+                <h1>Software</h1>
+                <div class="puntos" id="software">
+                </div>
+            </div>
+            
+            <!--software-->
+<!------------MAIN GRID ------------>
+            <div class="maingrid">
+<!---------PERSONAL INFO -->
+
+            <div class="personal">
+                <h1 class="nombre" id="nombre"><%=i; %></h1>
+                <h5 class="puesto" id="puesto"></h5>
+                <p class="descripcion" id="descripcion"></p>
+
+                <div class="informacion">
+                    <h4>Fecha de nacimiento:</h4>
+                    <p class="fecha" id="nacimiento"></p>
+                    <h4>Ciudad:</h4>
+                    <p class="direccion" id="direccion"></p>
+                    <h4>Telefono de contacto:</h4>
+                    <p class="telefono" id="telefono"></p>
+                    <h4>Correo:</h4>
+                    <p class="correo" id="correo"></p>
+                    <h4>Sitio web:</h4>
+                    <p class="web" id="web"></p>
+                </div>
+                <!--sitios-->
+
+                <div class="sitios" id ="sitios">
+                    <h1> Redes sociales </h1>
+                    <p class="sitio1" id="sitio1">
+                        <img class= "icono" id ="icono" src="media/facebook.png" alt="Italian Trulli">
+                        <br>sitio1</p>
+                    <p class="sitio2" id="sitio2">
+                        <img class= "icono" id ="icono" src="media/twitter.png" alt="Italian Trulli">
+                        <br>sitio2</p>
+                    <p class="sitio3" id="sitio3"><img class= "icono" id ="icono" src="media/share.png" alt="Italian Trulli">
+                        <br>sitio3</p>
+                    <p class="sitio4" id="sitio4"><img class= "icono" id ="icono" src="media/reddit.png" alt="Italian Trulli">
+                        <br>sitio4</p>
+                </div>
+
+            </div>
+            <!--personal-->
+        </div>
+        <!-------MAIN OVER-->
+
+            <div class="educacion" id="educacion">
+                <h1>Educación</h1>
+            </div>
+            <!--education-->
+
+            <div class="skills">
+                <h1>Habilidades</h1>
+                <div class="puntos" id="skills">
+                </div>
+            </div><!--skills-->
+
+        </div><!--grid-->
+    </div><!--contenedor-->
+
+
+
+</body>
+
+<script src="cv.js"></script>
+</html>
